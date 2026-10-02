@@ -12,3 +12,9 @@ function convert() {
 }
 
 convert();
+function resetConverter() {
+    document.getElementById("coin").value = "95200";
+    document.getElementById("amount").value = "1";
+
+    convert();
+}
