@@ -93,3 +93,6 @@ button:hover {
     font-size: 13px;
     margin-top: 20px;
 }
+.reset-button {
+    background: #777;
+}
