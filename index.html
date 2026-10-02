@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Price Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Crypto Price Converter</h1>
+        <p class="subtitle">Simple cryptocurrency value calculator</p>
+
+        <div class="converter">
+
+            <label for="coin">Cryptocurrency</label>
+
+            <select id="coin">
+                <option value="95200">Bitcoin (BTC)</option>
+                <option value="3450">Ethereum (ETH)</option>
+                <option value="192">Solana (SOL)</option>
+            </select>
+
+            <label for="amount">Amount</label>
+
+            <input
+                type="number"
+                id="amount"
+                value="1"
+                min="0"
+                step="any"
+            >
+
+            <button onclick="convert()">Convert</button>
+
+            <div class="result">
+                <span>Estimated value</span>
+                <strong id="result">$0.00</strong>
+            </div>
+
+        </div>
+
+        <p class="note">
+            Prices are static demonstration values.
+        </p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
